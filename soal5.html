@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 5</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+        /* background-image: url(pattern.svg); */
+        background-position: cover;
+        background-color: hsl(20, 4%, 71%);
+    }
+    #kotak{
+        margin: 100px auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 30px;
+        max-width: 50%;
+        -webkit-box-shadow: -8px 6px 18px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -8px 6px 18px -1px rgba(0,0,0,0.75);
+        box-shadow: -8px 6px 18px -1px rgba(0,0,0,0.75);
+        
+    }
+    #logoSoal{
+        display: block;
+        margin: 0 auto;
+        height: 150px;
+    }
+    .answer{
+        margin: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .answer:hover{
+        background-color: black;
+        color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <div id="kotak">
+        <h4>Soal 5:</h4>
+        <p>Darimana kah asal brand dengan logo di bawah ini?</p>
+        <img src="img/logoasics.png" alt="logo puma" id="logoSoal">
+        <div style="text-align: center;">
+            
+            <button class="answer" id="jepang">JEPANG</button>
+           
+            <button class="answer" id="ghana">GHANA</button>
+           
+            <button class="answer" id="vietnam">VIETNAM</button>
+            
+            <button class="answer" id="amerika">AMERIKA</button>
+        </div>
+
+    </div>
+
+    
+
+    <script>
+        document.getElementById('amerika').addEventListener("click", function(){
+            alert(`Yah kamu salah, kamu belanja aja deh ya.`)
+            window.location="belanja.html"
+        })
+        document.getElementById('ghana').addEventListener("click", function(){
+            alert(`Yah kamu salah, kamu belanja aja deh ya.`)
+            window.location="belanja.html"
+        })
+        document.getElementById('vietnam').addEventListener("click", function(){
+            alert(`Yah kamu salah, kamu belanja aja deh ya.`)
+            window.location="belanja.html"
+        })
+        document.getElementById('jepang').addEventListener("click", function(){
+            alert(`LUAR BIASA!! Kamu berhasil menjawab semua soal dengan benar.`)
+            window.location="pemenang.html"
+        })
+    </script>    
+</body>
+</html>

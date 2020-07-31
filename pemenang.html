@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELAMAT!!</title>
+    <style>
+        body{
+            margin: 0 auto;
+            background-color: hsl(20, 4%, 71%);
+        }
+        h1{
+            margin: 0 auto;
+            margin-top: 10%;
+            text-align: center;
+            background-color: black;
+            color: goldenrod;
+            border-radius: 30px;
+            /* outline-style: groove; */
+            -webkit-box-shadow: 18px 3px 52px -9px rgba(0,0,0,0.6);
+            -moz-box-shadow: 18px 3px 52px -9px rgba(0,0,0,0.6);
+            box-shadow: 18px 3px 52px -9px rgba(0,0,0,0.6);
+            width: 90%;
+            padding: 20px 10px;
+           
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            height: 200px;
+            -webkit-box-shadow: 18px 3px 52px -9px rgba(0,0,0,0.6);
+            -moz-box-shadow: 18px 3px 52px -9px rgba(0,0,0,0.6);
+            box-shadow: 18px 3px 52px -9px rgba(0,0,0,0.6);
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+        img:hover{
+            height: 500px;
+        }
+        h3{
+            text-align:center;
+            text-shadow: 2px 2px #ff0000;
+        }
+        #ulangi{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="selamat"><span id="nama"></span></h1>
+    <img id='gambar' src='' alt=''/>
+    <h3 id='ukuran'></h3>
+    <h3 id="alamat"></h3>
+    <h3 id="ulangi"></h3>
+
+
+<script>
+    name = prompt('Silahkan Masukan Nama')
+    // console.log(document.getElementById('nama'))
+    sepatu = prompt('Tulis Merk Sepatu Yang Kamu Mau (Adidas / Nike / Puma / Rebook / League)')
+    size = prompt('Masukan Ukuran Sepatu Kamu (41 - 44)')
+    alamat = prompt('Masukan Alamat Lengkap Pengiriman')
+    // console.log(name, sepatu)
+    // document.getElementById('nama').innerText = name.toUpperCase()
+    if(name === '' || sepatu === '' || name === null || sepatu === null || alamat === '' || alamat === null){
+    document.getElementById('selamat').innerText = `Kemenangan kamu kami batalkan karena tidak mengisi data dengan benar`
+    }else{
+        document.getElementById('selamat').innerText = `Selamat ${name.toUpperCase()}! Kamu berhasil memenangkan sepatu ${sepatu.toUpperCase()} seperti gambar di bawah ini.`
+        
+        if(sepatu.toLowerCase() === 'adidas'){
+            document.getElementById('gambar')['src'] = 'img/adidas.jpg'
+            document.getElementById('alamat').innerText = `Sepatu tersebut akan kami kirimkan ke ${alamat.toUpperCase()}. Dengan nama penerima ${name.toUpperCase()}.`
+            if(size === '41'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '42'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '43'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '44'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else{
+                document.getElementById('ukuran').innerText = `Sayangnya ukuran yang kamu pilih tidak ada, mungkin akan kami berikan ukuran terdekat.`
+            }
+        }else if(sepatu.toLowerCase() === 'nike'){
+            document.getElementById('gambar')['src'] = 'img/nike.jpg'
+            document.getElementById('alamat').innerText = `Sepatu tersebut akan kami kirimkan ke ${alamat.toUpperCase()}. Dengan nama penerima ${name.toUpperCase()}.`
+            if(size === '41'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '42'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '43'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '44'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else{
+                document.getElementById('ukuran').innerText = `Sayangnya ukuran yang kamu pilih tidak ada, mungkin akan kami berikan ukuran terdekat.`
+            }
+        }else if(sepatu.toLowerCase() === 'puma'){
+            document.getElementById('gambar')['src'] = 'img/puma.jpg'
+            document.getElementById('alamat').innerText = `Sepatu tersebut akan kami kirimkan ke ${alamat.toUpperCase()}. Dengan nama penerima ${name.toUpperCase()}.`
+            if(size === '41'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '42'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '43'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '44'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else{
+                document.getElementById('ukuran').innerText = `Sayangnya ukuran yang kamu pilih tidak ada, mungkin akan kami berikan ukuran terdekat.`
+            }
+        }else if(sepatu.toLowerCase() === 'reebok'){
+            document.getElementById('gambar')['src'] = 'img/reebok.jpg'
+            document.getElementById('alamat').innerText = `Sepatu tersebut akan kami kirimkan ke ${alamat.toUpperCase()}. Dengan nama penerima ${name.toUpperCase()}.`
+            if(size === '41'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '42'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '43'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '44'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else{
+                document.getElementById('ukuran').innerText = `Sayangnya ukuran yang kamu pilih tidak ada, mungkin akan kami berikan ukuran terdekat.`
+            }
+        }else if(sepatu.toLowerCase() === 'league'){
+            document.getElementById('gambar')['src'] = 'img/league.jpg'
+            document.getElementById('alamat').innerText = `Sepatu tersebut akan kami kirimkan ke ${alamat.toUpperCase()}. Dengan nama penerima ${name.toUpperCase()}.`
+            if(size === '41'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '42'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '43'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else if(size === '44'){
+                document.getElementById('ukuran').innerText = `Size ${size}`
+            }else{
+                document.getElementById('ukuran').innerText = `Sayangnya ukuran yang kamu pilih tidak ada, mungkin akan kami berikan ukuran terdekat.`
+            }
+        }else{
+            document.getElementById('selamat').innerText = `Mohon maaf, sepatu yang kamu mau tidak ada. Kamu dapat memilih sepatu Adidas / Nike / League / Reebok / Puma`
+            document.getElementById('ulangi').innerText = 'Klik Di Sini Untuk Input Ulang'
+        }
+    }
+
+    let ulang = document.getElementById('ulangi')
+    console.log(document.getElementById('ulangi').innerText)
+    ulang.addEventListener('click', function(){
+        window.location = 'pemenang.html'
+    })
+
+</script>
+</body>
+</html>

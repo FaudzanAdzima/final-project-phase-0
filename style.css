@@ -1,0 +1,142 @@
+#logo {
+    display: block;
+   height: 150px;
+   margin: 0 auto;
+   border-radius: 100%;
+}
+.tagline {
+    text-align: center;
+    color: lightgray;
+    font-family: 'Lobster', cursive;
+}
+#alamat{
+    margin-top: -10px;
+}
+header{
+    background-image: url(img/pattern.svg);
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+#quiz{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color:gold;
+    background-color: black;
+    font-size: 25px;
+    border-radius: 30px;
+}
+#quiz a {
+    color: gold;
+    padding: 10px 10px;
+}
+.main-box {
+    /* border: 5px solid black; */
+    border-radius: 20px;
+    padding: 10px;
+    background-image: url(img/pattern.svg);
+    background-size: cover;
+}
+#adidas{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+#nike{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+#reebok{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+#puma{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+#vans{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+#league{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+.shoes-box{
+    margin: 0 auto;
+    max-width: 700px;
+    min-height: 300px;
+    border-radius: 15px;
+    background-url: http://api.thumbr.it/whitenoise-361x370.png?;
+    background=fcfeffff&noise=b3afb3&density=44&opacity=46;
+}
+#image{
+    float: right;
+    height: 250px;
+    width: 250px
+    -webkit-box-shadow: -8px 6px 18px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 6px 18px -1px rgba(0,0,0,0.75);
+    box-shadow: -8px 6px 18px -1px rgba(0,0,0,0.75);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+#image:hover{
+    height: 300px;
+}
+
+.order-body{
+    /* background-image: url(im.jpg); */
+    padding: 30px;
+    margin-left: 30px;
+    background-color: black;
+    color: white;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 30px;
+}
+#logo-order{
+    border-radius: 100%;
+    height: 200px;
+    float: right;
+}
+.body-thanks {
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 30px;
+}
+#logo-thanks{
+    border-radius: 100%;
+    height: 200px;
+}
+a:hover{
+    color: yellow;
+}
+
+h1{
+    text-shadow: 1px 2.2px gray;
+}

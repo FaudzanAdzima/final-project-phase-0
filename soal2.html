@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+        /* background-image: url(pattern.svg); */
+        background-position: cover;
+        background-color: hsl(20, 4%, 71%);
+    }
+    #kotak{
+        margin: 100px auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 30px;
+        max-width: 50%;
+        max-width: 50%;
+        -webkit-box-shadow: -8px 6px 18px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -8px 6px 18px -1px rgba(0,0,0,0.75);
+        box-shadow: -8px 6px 18px -1px rgba(0,0,0,0.75);
+        
+    }
+    #logoSoal{
+        display: block;
+        margin: 0 auto;
+        max-height: 200px;
+    }
+    .answer{
+        margin: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .answer:hover{
+        background-color: black;
+        color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <div id="kotak">
+        <h4>Soal 2:</h4>
+        <p>Darimana kah asal brand dengan logo di bawah ini?</p>
+        <img src="img/logoadidas.jpg" alt="logo puma" id="logoSoal">
+        <div style="text-align: center;"> 
+            <button class="answer" id="italia">ITALIA</button>
+           
+            <button class="answer" id="inggris">INGGRIS</button>
+           
+            <button class="answer" id="jerman">JERMAN</button>
+            
+            <button class="answer" id="amerika">AMERIKA</button>
+        </div>
+
+    </div>
+
+    
+<script>
+    document.getElementById('italia').addEventListener("click", function(){
+        alert(`Yah kamu salah, kamu belanja aja deh ya.`)
+        window.location="belanja.html"
+    })
+    document.getElementById('inggris').addEventListener("click", function(){
+        alert(`Yah kamu salah, kamu belanja aja deh ya.`)
+        window.location="belanja.html"
+    })
+    document.getElementById('jerman').addEventListener("click", function(){
+        alert(`BENAR!! Klik OK untuk soal selanjutnya.`)
+        window.location="soal3.html"
+    })
+    document.getElementById('amerika').addEventListener("click", function(){
+        alert(`Yah kamu salah, kamu belanja aja deh ya.`)
+        window.location="belanja.html"
+    })
+</script>
+</body>
+</html>
